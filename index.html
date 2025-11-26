@@ -439,7 +439,7 @@
             <div class="text-2xl font-black serif-font tracking-tighter cursor-pointer" onclick="window.location.reload()">
                 결<span class="text-sm font-light text-gray-400 ml-1 font-sans">하다</span>
             </div>
-            <div class="text-xs text-gray-500 tracking-widest hidden md:block">결을 잇다</div>
+            <div class="text-[10px] md:text-xs text-gray-500 tracking-widest block">결을 잇다</div>
         </div>
     </nav>
 
@@ -729,9 +729,10 @@
                             <div class="mt-2 pt-2 border-t border-gray-200">
                                 <p class="font-bold text-xs text-indigo-800 mb-1">📌 반영된 핵심 질문:</p>
                                 <ul class="list-none space-y-1 text-xs ml-1">
-                                    <li>• <b>Q. 연락 빈도(q_contact_style):</b> 관계의 밀착도와 불안/회피/안정 애착 유형 분석</li>
-                                    <li>• <b>Q. 연락 두절 시 반응(q_absence):</b> 분리 불안 상황에서의 대처 방식 및 신뢰도 측정</li>
-                                    <li>• <b>Q. 이별 사유(q_dealbreaker):</b> 관계 유지에 필수적인 핵심 가치(신뢰, 존중) 확인</li>
+                                    <li>• <b>Q. 연락 스타일:</b> 관계의 밀착도와 불안/회피/안정 애착 유형 분석</li>
+                                    <li>• <b>Q. 연락 두절 시 반응:</b> 분리 불안 상황에서의 대처 방식 및 신뢰도 측정</li>
+                                    <li>• <b>Q. 사랑의 언어:</b> 친밀감 욕구와 애정 표현 방식 분석 (스킨십 포함)</li>
+                                    <li>• <b>Q. 공감과 위로:</b> 정서적 지지(Secure Base) 역할 수행 능력</li>
                                 </ul>
                             </div>
                         </div>
@@ -742,9 +743,10 @@
                             <div class="mt-2 pt-2 border-t border-gray-200">
                                 <p class="font-bold text-xs text-indigo-800 mb-1">📌 반영된 핵심 질문:</p>
                                 <ul class="list-none space-y-1 text-xs ml-1">
-                                    <li>• <b>Q. 갈등 직후(q_conflict_after):</b> 싸움 후 화해를 위한 시도(Repair Attempt) 방식 분석</li>
-                                    <li>• <b>Q. 사과 방식(q_apology):</b> 관계 회복을 위해 상대가 선호하는 언어적/행동적 접근법</li>
-                                    <li>• <b>Q. 논쟁 태도(q_argument):</b> 관계를 파괴하는 '4가지 독(비난, 방어, 경멸, 담쌓기)' 회피 여부</li>
+                                    <li>• <b>Q. 싸움 스타일:</b> 갈등 상황에서의 태도와 대응 방식</li>
+                                    <li>• <b>Q. 화해 방식:</b> 싸움 후 화해를 위한 시도(Repair Attempt) 방식 분석</li>
+                                    <li>• <b>Q. 사과 방식:</b> 관계 회복을 위해 상대가 선호하는 언어적/행동적 접근법</li>
+                                    <li>• <b>Q. 논쟁 태도:</b> 관계를 파괴하는 '4가지 독(비난, 방어, 경멸, 담쌓기)' 회피 여부</li>
                                 </ul>
                             </div>
                         </div>
@@ -755,9 +757,9 @@
                             <div class="mt-2 pt-2 border-t border-gray-200">
                                 <p class="font-bold text-xs text-indigo-800 mb-1">📌 반영된 핵심 질문:</p>
                                 <ul class="list-none space-y-1 text-xs ml-1">
-                                    <li>• <b>성실성/개방성:</b> 생활 리듬(q_rhythm), 위생(q_hygiene), 여행 계획(q_plan)</li>
-                                    <li>• <b>외향성/정서안정:</b> 에너지 충전(q_charge), 주말 활동(q_weekend), 감정 표출(q_anger)</li>
-                                    <li>• <b>현실적 가치관:</b> 재무(q_finance), 자녀 계획(q_kids), 대화 주제(q_topic)</li>
+                                    <li>• <b>성실성/개방성:</b> 생활 리듬, 위생 관념, 여행 계획 스타일</li>
+                                    <li>• <b>외향성/정서안정:</b> 에너지 충전 방식, 주말 활동 선호도</li>
+                                    <li>• <b>현실적 가치관:</b> 경제관, 자녀 계획, 대화 주제, 미래 설계</li>
                                 </ul>
                             </div>
                         </div>
@@ -969,7 +971,7 @@
             // 1. 수면
             { id: 'q_sleep', section: 'Reptilian', category: '생존 습관', type: 'similarity', text: '당신의 잠자리 예민도는?', options: [ 
                 { value: '1', text: '(예민) 작은 소리나 빛에도 쉽게 깨는 예민한 편이다.', tag: '#신경증'}, 
-                { value: '2', text: '(보통) 적당한 생활 소음이나 빛은 신경 쓰지 않는다.', tag: '#정서안정'}, 
+                { value: '2', text: '(보통) 적당한 생활 소음이나 빛은 신경 쓰지 않는 편이다.', tag: '#정서안정'}, 
                 { value: '3', text: '(유연) 환경이 바뀌어도 적응하려고 노력하는 편이다.', tag: '#개방성'}, 
                 { value: '4', text: '(둔감) 머리만 대면 잠들 정도로 수면 환경에 무던하다.', tag: '#정서안정'} 
             ]},
@@ -982,10 +984,10 @@
             ]},
             // 3. 위생 (Dynamic)
             { id: 'q_hygiene', section: 'Reptilian', category: '생존 습관', type: 'dynamic', text: '방바닥에 머리카락이 떨어져 있다면?', options: [ 
-                { value: '1', text: '(즉시) 보이는 즉시 치워야 직성이 풀린다.', tag: '#성실성', followup: { text: '배우자가 어지르면?', options: [{ value: '1', text: '잔소리 폭격' }, { value: '2', text: '따라다니며 치움' }, { value: '3', text: '포기함' }] } }, 
+                { value: '1', text: '(즉시) 보이는 즉시 치워야 직성이 풀리는 성격이다.', tag: '#성실성', followup: { text: '배우자가 어지르면?', options: [{ value: '1', text: '잔소리 폭격' }, { value: '2', text: '따라다니며 치움' }, { value: '3', text: '포기함' }] } }, 
                 { value: '2', text: '(루틴) 정해진 시간에 규칙적으로 청소하는 것을 좋아한다.', tag: '#성실성', followup: { text: '청소를 못했다면?', options: [{ value: '1', text: '스트레스 받음' }, { value: '2', text: '내일 몰아서 함' }, { value: '3', text: '괜찮음' }] } }, 
                 { value: '3', text: '(융통) 평소엔 적당히 하고 주말에 몰아서 하는 편이다.', tag: '#개방성', followup: { text: '배우자가 깔끔하면?', options: [{ value: '1', text: '맞추려고 노력' }, { value: '2', text: '피곤함' }, { value: '3', text: '알아서 하라고 둠' }] } }, 
-                { value: '4', text: '(방임) 생활에 지장 없으면 크게 신경 안 쓴다.', tag: '#정서안정', followup: { text: '집이 엉망이라면?', options: [{ value: '1', text: '언젠간 치우겠지' }, { value: '2', text: '도우미 부름' }, { value: '3', text: '불편하지 않음' }] } } 
+                { value: '4', text: '(방임) 생활에 지장 없으면 크게 신경 안 쓰는 편이다.', tag: '#정서안정', followup: { text: '집이 엉망이라면?', options: [{ value: '1', text: '언젠간 치우겠지' }, { value: '2', text: '도우미 부름' }, { value: '3', text: '불편하지 않음' }] } } 
             ]},
             // 4. 식성
             { id: 'q_food', section: 'Reptilian', category: '생존 습관', type: 'similarity', text: '데이트 맛집을 고를 때 당신은?', options: [ 
@@ -1040,31 +1042,31 @@
             ]},
             // 11. 표현
             { id: 'q_expression', section: 'Limbic', category: '사랑의 언어', type: 'crossover', text_me: '내가 사랑받는다고 느끼는 순간은?', text_partner: '연인에게 주로 해주는 표현 방식은?', options: [ 
-                { value: '1', text: '(인정) 따뜻한 말 한마디와 구체적인 칭찬을 들을 때.', tag: '#우호성'}, 
-                { value: '2', text: '(봉사) 나를 위해 귀찮음을 감수하고 챙겨줄 때.', tag: '#성실성'}, 
-                { value: '3', text: '(함께) 눈을 맞추고 온전히 둘만의 시간을 보낼 때.', tag: '#애착안정'}, 
-                { value: '4', text: '(스킨십) 손잡기, 포옹 등 따뜻한 체온이 닿을 때.', tag: '#외향성'} 
+                { value: '1', text: '(인정) 따뜻한 말 한마디와 구체적인 칭찬을 들을 때 행복하다.', text_partner: '(인정) 따뜻한 말 한마디와 구체적인 칭찬을 자주 해준다.', tag: '#우호성'}, 
+                { value: '2', text: '(봉사) 나를 위해 귀찮음을 감수하고 챙겨줄 때 감동한다.', text_partner: '(봉사) 연인을 위해 귀찮음을 감수하고 세심하게 챙겨준다.', tag: '#성실성'}, 
+                { value: '3', text: '(함께) 눈을 맞추고 온전히 둘만의 시간을 보낼 때 충만하다.', text_partner: '(함께) 눈을 맞추고 온전히 둘만의 시간을 보내는 데 집중한다.', tag: '#애착안정'}, 
+                { value: '4', text: '(스킨십) 손잡기, 포옹 등 따뜻한 체온이 닿을 때 안정된다.', text_partner: '(스킨십) 먼저 손을 잡거나 안아주며 따뜻한 체온을 나눈다.', tag: '#외향성'} 
             ]},
             // 12. 공감
             { id: 'q_empathy', section: 'Limbic', category: '정서 지지', type: 'crossover', text_me: '힘들 때 받고 싶은 위로는?', text_partner: '연인이 힘들 때 나의 반응은?', options: [ 
                 { value: '1', text: '(감정) 감정적으로 깊이 공감해주고 따뜻하게 위로해준다.', tag: '#우호성'}, 
                 { value: '2', text: '(해결) 문제 해결을 위한 현실적이고 구체적인 조언을 해준다.', tag: '#성실성'}, 
-                { value: '3', text: '(경청) 이야기를 끝까지 들어주고 상대가 원할 때 조언한다.', tag: '#애착안정'}, 
-                { value: '4', text: '(지지) 묵묵히 곁을 지켜주거나 맛있는 음식을 사준다.', tag: '#우호성'} 
+                { value: '3', text: '(경청) 일단 끝까지 들어주고, 원하면 조언을 해준다.', tag: '#애착안정'}, 
+                { value: '4', text: '(지지) 묵묵히 맛있는 걸 사주거나 옆에 있어 준다.', tag: '#우호성'} 
             ]},
-            // 13. 감정
-            { id: 'q_anger', section: 'Limbic', category: '감정 조절', type: 'similarity', text: '화가 났을 때 감정 표출 방식은?', options: [ 
-                { value: '1', text: '(즉시) 그 자리에서 바로 대화로 풀어야 마음이 편하다.', tag: '#외향성'}, 
-                { value: '2', text: '(지연) 감정을 가라앉힌 뒤 차분해졌을 때 이야기한다.', tag: '#정서안정'}, 
-                { value: '3', text: '(정리) 생각을 정리할 시간을 가진 뒤 논리적으로 대화한다.', tag: '#성실성'}, 
-                { value: '4', text: '(침묵) 혼자만의 시간을 가지며 기분이 풀릴 때까지 침묵한다.', tag: '#애착회피'} 
+            // 13. 감정 -> 싸움 스타일
+            { id: 'q_anger', section: 'Limbic', category: '싸움 스타일', type: 'similarity', text: '연인과 의견 충돌이 있을 때, 주로 어떤 모습으로 싸우나요?', options: [ 
+                { value: '1', text: '(표출) 할 말은 해야 한다. 그 자리에서 불만을 바로 이야기한다.', tag: '#외향성'}, 
+                { value: '2', text: '(진정) 감정이 격해지면 실수가 생길까 봐 잠시 대화를 멈춘다.', tag: '#정서안정'}, 
+                { value: '3', text: '(논리) 감정적인 호소보다는 시시비비를 논리적으로 따진다.', tag: '#성실성'}, 
+                { value: '4', text: '(회피) 싸우는 상황 자체가 싫어서 입을 다물거나 자리를 피한다.', tag: '#애착회피'} 
             ]},
-            // 14. 갈등 직후
-            { id: 'q_conflict_after', section: 'Limbic', category: '갈등 회복', type: 'dynamic', text: '크게 싸운 직후, 당신이 원하는 것은?', options: [ 
-                { value: '1', text: '(대화) 즉시 대화를 통해 오해를 풀고 화해하고 싶다.', tag: '#애착안정', followup: { text: '상대가 피하면?', options: [{ value: '1', text: '끝까지 따라감' }, { value: '2', text: '기다려줌' }, { value: '3', text: '화가 더 남' }] } }, 
-                { value: '2', text: '(환기) 잠시 감정을 식힐 혼자만의 시간이 필요하다.', tag: '#정서안정', followup: { text: '상대가 재촉하면?', options: [{ value: '1', text: '숨막힘' }, { value: '2', text: '무시함' }, { value: '3', text: '화냄' }] } }, 
-                { value: '3', text: '(스킨십) 긴 대화보다는 가벼운 스킨십으로 화해하고 싶다.', tag: '#우호성', followup: { text: '상대가 뿌리치면?', options: [{ value: '1', text: '상처받음' }, { value: '2', text: '민망함' }, { value: '3', text: '다시 시도함' }] } }, 
-                { value: '4', text: '(회피) 일단 자고 일어나서 다음 날 차분히 이야기하고 싶다.', tag: '#애착회피', followup: { text: '다음날이 되면?', options: [{ value: '1', text: '어색하게 품' }, { value: '2', text: '아무 일 없던 척' }, { value: '3', text: '다시 얘기 꺼냄' }] } } 
+            // 14. 화해 (New)
+            { id: 'q_reconciliation', section: 'Limbic', category: '화해 방식', type: 'dynamic', text: '싸움 후 냉전 상태를 끝내고 싶을 때, 당신의 화해 방식은?', options: [ 
+                { value: '1', text: '(직면) "우리 얘기 좀 해"라며 먼저 대화를 시도한다.', tag: '#애착안정', followup: { text: '상대가 거부하면?', options: [{ value: '1', text: '기다린다' }, { value: '2', text: '답답하다' }, { value: '3', text: '더 화낸다' }] } }, 
+                { value: '2', text: '(유화) 애교를 부리거나 슬쩍 장난을 치며 분위기를 푼다.', tag: '#우호성', followup: { text: '상대가 정색하면?', options: [{ value: '1', text: '무안하다' }, { value: '2', text: '상처받는다' }, { value: '3', text: '그만둔다' }] } }, 
+                { value: '3', text: '(행동) 좋아하는 음식을 사오거나 선물을 건넨다.', tag: '#외향성', followup: { text: '받지 않으면?', options: [{ value: '1', text: '서운하다' }, { value: '2', text: '화난다' }, { value: '3', text: '다음 기회에' }] } }, 
+                { value: '4', text: '(대기) 상대방 기분이 풀릴 때까지 조용히 기다린다.', tag: '#애착회피', followup: { text: '너무 오래 걸리면?', options: [{ value: '1', text: '먼저 연락한다' }, { value: '2', text: '계속 기다린다' }, { value: '3', text: '지친다' }] } } 
             ]},
             // 15. 사과
             { id: 'q_apology', section: 'Limbic', category: '갈등 회복', type: 'similarity', text: '진정한 사과라고 느끼는 것은?', options: [ 
@@ -1090,9 +1092,9 @@
 
             /* --- STEP 3. Neocortex (이성/가치관/미래) --- */
             // 18. 재무
-            { id: 'q_finance', section: 'Neocortex', category: '경제관', type: 'similarity', text: '1,000만 원의 여유 자금이 생겼다. 어떻게 할 것인가?', options: [ 
-                { value: '1', text: '(공격) 주식이나 코인 등 수익률이 높은 곳에 투자한다.', tag: '#개방성'}, 
-                { value: '2', text: '(안전) 원금이 보장되는 안전한 예금이나 적금에 둔다.', tag: '#성실성'}, 
+            { id: 'q_finance', section: 'Neocortex', category: '경제관', type: 'similarity', text: '예상치 못한 목돈이 생겼을 때, 선호하는 자산 운용 방식은?', options: [ 
+                { value: '1', text: '(투자) 주식, 코인 등 기대 수익률이 높은 곳에 과감하게 투자한다.', tag: '#개방성'}, 
+                { value: '2', text: '(저축) 원금이 보장되는 예금이나 적금에 안전하게 넣어둔다.', tag: '#성실성'}, 
                 { value: '3', text: '(분산) 일부는 저축하고 일부는 우량주 등에 분산 투자한다.', tag: '#성실성'}, 
                 { value: '4', text: '(소비) 나를 위한 선물이나 여행 등 값진 경험에 사용한다.', tag: '#외향성'} 
             ]},
@@ -1242,7 +1244,11 @@
 
             let partnerSection = '';
             if (q.type === 'crossover') {
-                const partnerOptions = q.options.map((opt, idx) => `<div class="relative mb-2"><input type="radio" name="${q.id}-partner-${gender}" value="${opt.value}" data-tag="${opt.tag}" data-text="${opt.text}" id="${q.id}-partner-${gender}-${idx}" class="hidden-radio peer"><label for="${q.id}-partner-${gender}-${idx}" class="option-label" style="font-size: 0.85rem; padding: 12px; background:#f9f9f9;">${opt.text}</label></div>`).join('');
+                const partnerOptions = q.options.map((opt, idx) => {
+                    // [수정] text_partner가 있으면 그것을 사용, 없으면 기본 text 사용 (Giving 뉘앙스 적용)
+                    const optionText = opt.text_partner || opt.text;
+                    return `<div class="relative mb-2"><input type="radio" name="${q.id}-partner-${gender}" value="${opt.value}" data-tag="${opt.tag}" data-text="${optionText}" id="${q.id}-partner-${gender}-${idx}" class="hidden-radio peer"><label for="${q.id}-partner-${gender}-${idx}" class="option-label" style="font-size: 0.85rem; padding: 12px; background:#f9f9f9;">${optionText}</label></div>`;
+                }).join('');
                 partnerSection = `<div class="mt-4 pt-4 border-t border-dashed border-gray-200"><p class="text-xs font-bold text-purple-600 mb-2">Q. ${q.text_partner}</p><div class="grid grid-cols-1 gap-1">${partnerOptions}</div></div>`;
             }
 
